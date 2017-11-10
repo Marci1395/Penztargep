@@ -8,13 +8,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
-using static WindowsFormsApplication1.Alap;
 
 namespace WindowsFormsApplication1
 {
     public partial class Regisztracio : Form
     {
-        AdatbazisQledb db = new AdatbazisQledb();
+        WindowsFormsApplication1.Alap.AdatbazisQledb db = new WindowsFormsApplication1.Alap.AdatbazisQledb();
 
         public Regisztracio()
         {

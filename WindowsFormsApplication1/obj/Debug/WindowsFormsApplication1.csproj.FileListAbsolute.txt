@@ -21,3 +21,15 @@ C:\Users\Dzsengoo\Desktop\Pénztárgép\penztargep\WindowsFormsApplication1\obj\
 C:\Users\Dzsengoo\Desktop\Pénztárgép\penztargep\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
 C:\Users\Dzsengoo\Desktop\Pénztárgép\penztargep\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Regisztracio.resources
 C:\Users\Dzsengoo\Desktop\Pénztárgép\penztargep\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Teszt\Penztargep\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Teszt\Penztargep\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Teszt\Penztargep\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Teszt\Penztargep\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Teszt\Penztargep\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Belepes.resources
+C:\Teszt\Penztargep\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Form1.resources
+C:\Teszt\Penztargep\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Teszt\Penztargep\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Regisztracio.resources
+C:\Teszt\Penztargep\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
+C:\Teszt\Penztargep\WindowsFormsApplication1\bin\Debug\Felhasznalok.accdb
+C:\Teszt\Penztargep\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Teszt\Penztargep\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
