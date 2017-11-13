@@ -1,0 +1,9 @@
+C:\VS\Leltar\Leltar\bin\Debug\Leltar.exe.config
+C:\VS\Leltar\Leltar\bin\Debug\Leltar.exe
+C:\VS\Leltar\Leltar\bin\Debug\Leltar.pdb
+C:\VS\Leltar\Leltar\obj\Debug\Leltar.csprojResolveAssemblyReference.cache
+C:\VS\Leltar\Leltar\obj\Debug\Leltar.Form1.resources
+C:\VS\Leltar\Leltar\obj\Debug\Leltar.Properties.Resources.resources
+C:\VS\Leltar\Leltar\obj\Debug\Leltar.csproj.GenerateResource.Cache
+C:\VS\Leltar\Leltar\obj\Debug\Leltar.exe
+C:\VS\Leltar\Leltar\obj\Debug\Leltar.pdb
