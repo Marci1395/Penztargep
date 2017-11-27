@@ -1,0 +1,10 @@
+C:\VS\PayOffice\PayOffice\bin\Debug\PayOffice.exe.config
+C:\VS\PayOffice\PayOffice\bin\Debug\PayOffice.exe
+C:\VS\PayOffice\PayOffice\bin\Debug\PayOffice.pdb
+C:\VS\PayOffice\PayOffice\obj\Debug\PayOffice.csprojResolveAssemblyReference.cache
+C:\VS\PayOffice\PayOffice\obj\Debug\PayOffice.Properties.Resources.resources
+C:\VS\PayOffice\PayOffice\obj\Debug\PayOffice.csproj.GenerateResource.Cache
+C:\VS\PayOffice\PayOffice\obj\Debug\PayOffice.exe
+C:\VS\PayOffice\PayOffice\obj\Debug\PayOffice.pdb
+C:\VS\PayOffice\PayOffice\obj\Debug\PayOffice.Form1.resources
+C:\VS\PayOffice\PayOffice\obj\Debug\PayOffice.Main.resources
