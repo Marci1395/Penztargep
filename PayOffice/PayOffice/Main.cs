@@ -16,5 +16,11 @@ namespace PayOffice
         {
             InitializeComponent();
         }
+
+        private void újToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            User u = new User();
+            u.Show();
+        }
     }
 }

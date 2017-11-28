@@ -30,9 +30,9 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.újToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.módosításToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.újToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.vásárlókToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.újToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
@@ -70,6 +70,19 @@
             this.toolStripMenuItem1.Size = new System.Drawing.Size(86, 20);
             this.toolStripMenuItem1.Text = "Felhasználók";
             // 
+            // újToolStripMenuItem
+            // 
+            this.újToolStripMenuItem.Name = "újToolStripMenuItem";
+            this.újToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.újToolStripMenuItem.Text = "Új";
+            this.újToolStripMenuItem.Click += new System.EventHandler(this.újToolStripMenuItem_Click);
+            // 
+            // módosításToolStripMenuItem
+            // 
+            this.módosításToolStripMenuItem.Name = "módosításToolStripMenuItem";
+            this.módosításToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.módosításToolStripMenuItem.Text = "Módosítás";
+            // 
             // toolStripMenuItem2
             // 
             this.toolStripMenuItem2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -78,22 +91,10 @@
             this.toolStripMenuItem2.Size = new System.Drawing.Size(71, 20);
             this.toolStripMenuItem2.Text = "Termékek";
             // 
-            // újToolStripMenuItem
-            // 
-            this.újToolStripMenuItem.Name = "újToolStripMenuItem";
-            this.újToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.újToolStripMenuItem.Text = "Új";
-            // 
-            // módosításToolStripMenuItem
-            // 
-            this.módosításToolStripMenuItem.Name = "módosításToolStripMenuItem";
-            this.módosításToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.módosításToolStripMenuItem.Text = "Módosítás";
-            // 
             // újToolStripMenuItem1
             // 
             this.újToolStripMenuItem1.Name = "újToolStripMenuItem1";
-            this.újToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.újToolStripMenuItem1.Size = new System.Drawing.Size(85, 22);
             this.újToolStripMenuItem1.Text = "Új";
             // 
             // vásárlókToolStripMenuItem
@@ -107,7 +108,7 @@
             // újToolStripMenuItem2
             // 
             this.újToolStripMenuItem2.Name = "újToolStripMenuItem2";
-            this.újToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.újToolStripMenuItem2.Size = new System.Drawing.Size(85, 22);
             this.újToolStripMenuItem2.Text = "Új";
             // 
             // szállítókToolStripMenuItem
@@ -140,13 +141,13 @@
             // naplóToolStripMenuItem
             // 
             this.naplóToolStripMenuItem.Name = "naplóToolStripMenuItem";
-            this.naplóToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.naplóToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.naplóToolStripMenuItem.Text = "Napló";
             // 
             // leltárToolStripMenuItem
             // 
             this.leltárToolStripMenuItem.Name = "leltárToolStripMenuItem";
-            this.leltárToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.leltárToolStripMenuItem.Size = new System.Drawing.Size(106, 22);
             this.leltárToolStripMenuItem.Text = "Leltár";
             // 
             // Main
