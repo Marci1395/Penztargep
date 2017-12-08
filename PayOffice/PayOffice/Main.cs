@@ -22,5 +22,35 @@ namespace PayOffice
             User u = new User();
             u.Show();
         }
+
+        private void újToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Product p = new Product();
+            p.Show();
+        }
+
+        private void újToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            Customer c = new Customer();
+            c.Show();
+        }
+
+        private void újToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            Supplier s = new Supplier();
+            s.Show();
+        }
+
+        private void újToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            Receive r = new Receive();
+            r.Show();
+        }
+
+        private void megnyitásToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Sale s = new Sale();
+            s.Show();
+        }
     }
 }
