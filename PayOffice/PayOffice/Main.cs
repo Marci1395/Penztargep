@@ -52,5 +52,11 @@ namespace PayOffice
             Sale s = new Sale();
             s.Show();
         }
+
+        private void módosításToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            UsersList ul = new UsersList();
+            ul.Show();
+        }
     }
 }

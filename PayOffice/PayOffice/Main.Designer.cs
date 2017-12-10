@@ -77,15 +77,16 @@
             // újToolStripMenuItem
             // 
             this.újToolStripMenuItem.Name = "újToolStripMenuItem";
-            this.újToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.újToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.újToolStripMenuItem.Text = "Új";
             this.újToolStripMenuItem.Click += new System.EventHandler(this.újToolStripMenuItem_Click);
             // 
             // módosításToolStripMenuItem
             // 
             this.módosításToolStripMenuItem.Name = "módosításToolStripMenuItem";
-            this.módosításToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.módosításToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.módosításToolStripMenuItem.Text = "Módosítás";
+            this.módosításToolStripMenuItem.Click += new System.EventHandler(this.módosításToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
