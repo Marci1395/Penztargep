@@ -63,7 +63,6 @@ C:\T\Penztargep\PayOffice\PayOffice\bin\Debug\PayOffice.exe
 C:\T\Penztargep\PayOffice\PayOffice\bin\Debug\PayOffice.pdb
 C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.csprojResolveAssemblyReference.cache
 C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.Customer.resources
-C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.Form1.resources
 C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.Main.resources
 C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.Product.resources
 C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.Properties.Resources.resources
@@ -73,3 +72,8 @@ C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.Supplier.resources
 C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.User.resources
 C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.UsersList.resources
 C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.csproj.GenerateResource.Cache
+C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.Form1.resources
+C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.ProductsList.resources
+C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.SuppliersList.resources
+C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.CustomersList.resources
+C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.NewReceive.resources

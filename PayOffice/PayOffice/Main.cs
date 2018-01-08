@@ -58,5 +58,23 @@ namespace PayOffice
             UsersList ul = new UsersList();
             ul.Show();
         }
+
+        private void módosításToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            ProductsList pl = new ProductsList();
+            pl.Show();
+        }
+
+        private void módosításToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            SuppliersList sl = new SuppliersList();
+            sl.Show();
+        }
+
+        private void mósodításToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CustomersList cl = new CustomersList();
+            cl.Show();
+        }
     }
 }

@@ -57,5 +57,10 @@ namespace PayOffice
             MessageBox.Show("Sikeres törlés!");
             getData();
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
