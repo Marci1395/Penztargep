@@ -77,3 +77,5 @@ C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.ProductsList.resources
 C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.SuppliersList.resources
 C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.CustomersList.resources
 C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.NewReceive.resources
+C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.ReceivesList.resources
+C:\T\Penztargep\PayOffice\PayOffice\obj\Debug\PayOffice.Receives.resources

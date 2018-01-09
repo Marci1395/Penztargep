@@ -54,35 +54,45 @@ namespace PayOffice
 
         private void button2_Click(object sender, EventArgs e)
         {
-            // string szallito = textBox1.Text;
-            string szallito = "1";
-            string datum = textBox2.Text;
-            string netto = osszes.ToString();
-            double b = osszes * 1.27;
-            string brutto = b.ToString();
-            string connstring = "Provider=Microsoft.ACE.OLEDB.12.0; data source = DB.accdb;";
-            OleDbConnection conn = new OleDbConnection(connstring);
-            conn.Open();
-            string command = "Select MAX(ID) FROM Receives";
-            OleDbCommand cmd = new OleDbCommand(command, conn);
-            string res = Convert.ToString(cmd.ExecuteScalar());
-            id = int.Parse(res);
-            id++;
-            command = "INSERT INTO Receives (ID, SupplierID, BillingDate, Net, Gross) VALUES ('" + id + "', '" + szallito + "', '" + datum + "', '" + netto + "', '" + brutto + "')";
-            cmd = new OleDbCommand(command, conn);
-            cmd.ExecuteNonQuery();
-            for (int i = 0; i < max; i++)
+            try
+            {
+                // string szallito = textBox1.Text;
+                string szallito = "1";
+                string datum = textBox2.Text;
+                string netto = osszes.ToString();
+                double b = osszes * 1.27;
+                string brutto = b.ToString();
+                string connstring = "Provider=Microsoft.ACE.OLEDB.12.0; data source = DB.accdb;";
+                OleDbConnection conn = new OleDbConnection(connstring);
+                conn.Open();
+                string command = "Select MAX(ID) FROM Receives";
+                OleDbCommand cmd = new OleDbCommand(command, conn);
+                string res = Convert.ToString(cmd.ExecuteScalar());
+                id = int.Parse(res);
+                id++;
+                command = "INSERT INTO Receives (ID, SupplierID, BillingDate, Net, Gross) VALUES ('" + id + "', '" + szallito + "', '" + datum + "', '" + netto + "', '" + brutto + "')";
+                cmd = new OleDbCommand(command, conn);
+                cmd.ExecuteNonQuery();
+                for (int i = 0; i < max; i++)
+                {
+
+                    string tid = dt.Rows[i][0].ToString();
+                    string db = dt.Rows[i][2].ToString();
+                    string net = dt.Rows[i][3].ToString();
+                    string command2 = "INSERT INTO ReceivesLineItems (ReceiveID, ProductID, Quantity, Cost) VALUES (" + id + ", " + tid + ", " + db + ", " + net + ")";
+                    OleDbCommand cmd2 = new OleDbCommand(command2, conn);
+                    cmd2.ExecuteNonQuery();
+
+                }
+                conn.Close();
+                MessageBox.Show("Sikeres mentés!");
+            }
+            catch (Exception)
             {
 
-                string tid = dt.Rows[i][0].ToString();
-                string db = dt.Rows[i][2].ToString();
-                string net = dt.Rows[i][3].ToString();
-                string command2 = "INSERT INTO ReceivesLineItems (ReceiveID, ProductID, Quantity, Cost) VALUES (" + id + ", " + tid + ", " + db + ", '" + net + "')";
-                OleDbCommand cmd2 = new OleDbCommand(command, conn);
-                cmd2.ExecuteNonQuery();
-
+                MessageBox.Show("Nem sikerült!");
             }
-            conn.Close();
+            
         }
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)

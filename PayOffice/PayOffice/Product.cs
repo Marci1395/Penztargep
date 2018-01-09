@@ -41,10 +41,10 @@ namespace PayOffice
 
             textBox1.Text = ds.Tables[0].Rows[0][1].ToString();
             textBox2.Text = ds.Tables[0].Rows[0][2].ToString();
-            textBox3.Text = ds.Tables[0].Rows[0][2].ToString();
-            textBox4.Text = ds.Tables[0].Rows[0][3].ToString();
-            textBox5.Text = ds.Tables[0].Rows[0][4].ToString();
-            textBox6.Text = ds.Tables[0].Rows[0][5].ToString();
+            textBox3.Text = ds.Tables[0].Rows[0][3].ToString();
+            textBox4.Text = ds.Tables[0].Rows[0][4].ToString();
+            textBox5.Text = ds.Tables[0].Rows[0][5].ToString();
+            textBox6.Text = ds.Tables[0].Rows[0][6].ToString();
 
 
         }

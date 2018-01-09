@@ -104,6 +104,18 @@
     <Compile Include="Receive.Designer.cs">
       <DependentUpon>Receive.cs</DependentUpon>
     </Compile>
+    <Compile Include="Receives.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receives.Designer.cs">
+      <DependentUpon>Receives.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReceivesList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReceivesList.Designer.cs">
+      <DependentUpon>ReceivesList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sale.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,6 +178,12 @@
     </Compile>
     <EmbeddedResource Include="Receive.resx">
       <DependentUpon>Receive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receives.resx">
+      <DependentUpon>Receives.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReceivesList.resx">
+      <DependentUpon>ReceivesList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Sale.resx">
       <DependentUpon>Sale.cs</DependentUpon>

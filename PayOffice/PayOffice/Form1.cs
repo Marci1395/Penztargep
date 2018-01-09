@@ -52,7 +52,7 @@ namespace PayOffice
                 string pw = ds.Tables[0].Rows[0][0].ToString();
                 if (pwch == pw)
                 {
-                    Main main = new Main();
+                    Main main = new Main(username);
                     this.Hide();
                     main.Show();
                 }

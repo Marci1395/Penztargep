@@ -12,9 +12,16 @@ namespace PayOffice
 {
     public partial class Main : Form
     {
+        string user;
         public Main()
         {
             InitializeComponent();
+        }
+        public Main(string u)
+        {
+            InitializeComponent();
+            user = u;
+            label2.Text = user;
         }
 
         private void újToolStripMenuItem_Click(object sender, EventArgs e)
@@ -75,6 +82,12 @@ namespace PayOffice
         {
             CustomersList cl = new CustomersList();
             cl.Show();
+        }
+
+        private void mentettSzámlákToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ReceivesList rl = new ReceivesList();
+            rl.Show();
         }
     }
 }
