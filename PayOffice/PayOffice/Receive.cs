@@ -56,9 +56,12 @@ namespace PayOffice
 
         private void dataGridView1_SelectionChanged(object sender, EventArgs e)
         {
-
-            selected = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            selected_name = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            try
+            {
+                selected = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                selected_name = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            }
+            catch { }
         }
 
         private void button1_Click(object sender, EventArgs e)
