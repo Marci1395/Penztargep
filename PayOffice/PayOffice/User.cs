@@ -5,6 +5,7 @@ using System.Data;
 using System.Data.OleDb;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -52,15 +53,27 @@ namespace PayOffice
         {
             this.Close();
         }
-
+        public string MD5Hash(string password)
+        {
+            MD5CryptoServiceProvider md5 = new MD5CryptoServiceProvider();
+            md5.ComputeHash(ASCIIEncoding.ASCII.GetBytes(password));
+            byte[] pw = md5.Hash;
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < pw.Length; i++)
+            {
+                sb.Append(pw[i].ToString("x2"));
+            }
+            return sb.ToString();
+        }
         private void button1_Click(object sender, EventArgs e)
         {
             string username = textBox1.Text;
-            string pw = textBox2.Text;
+            string pw1 = textBox2.Text;
             string pw2 = textBox3.Text;
             string lname = textBox4.Text;
             string fname = textBox5.Text;
             string email = textBox6.Text;
+            string pw = MD5Hash(pw1);
 
             string connstring = "Provider=Microsoft.ACE.OLEDB.12.0; data source = DB.accdb;";
             OleDbConnection conn = new OleDbConnection(connstring);
