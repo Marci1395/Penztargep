@@ -14,82 +14,72 @@ namespace PayOffice
 {
     public partial class Sale : Form
     {
-        private BindingSource bindingSource1 = new BindingSource();
-        private OleDbDataAdapter dataAdapter = new OleDbDataAdapter();
-
+        OleDbConnection conn;
+        OleDbDataAdapter dataadapter;
+        DataSet ds;
+        DataTable dt;
+        string selected;
+        string selected_name;
+        string selected_quantity;
+        string selected_cost;
         public Sale()
         {
             InitializeComponent();
-        }
-
-        private void GetData(string selectCommand)
-        {
-            try
-            {
-                string connstring = "Provider=Microsoft.ACE.OLEDB.12.0; data source = DB.accdb;";
-                OleDbConnection conn = new OleDbConnection(connstring);
-                conn.Open();
-
-                dataAdapter = new OleDbDataAdapter(selectCommand, connstring);
-                OleDbCommandBuilder commandBuilder = new OleDbCommandBuilder(dataAdapter);
-                
-                DataTable table = new DataTable();
-                table.Locale = System.Globalization.CultureInfo.InvariantCulture;
-                dataAdapter.Fill(table);
-                bindingSource1.DataSource = table;
-                
-                dataGridView1.AutoResizeColumns(
-                    DataGridViewAutoSizeColumnsMode.AllCellsExceptHeader);
-            }
-            catch (OleDbException)
-            {
-                MessageBox.Show("To run this example, replace the value of the " +
-                    "connectionString variable with a connection string that is " +
-                    "valid for your system.");
-            }
-        }
-
-        private void Sale_Load(object sender, EventArgs e)
-        {
-            dataGridView1.DataSource = bindingSource1;
-            GetData("select ProductName, SalePrice, ItemNumber from Products");
-
-            FillCombobox();
-
-            dataGridView2.DataSource = bindingSource1;
-            GetData("");
-        }
-
-        protected void FillCombobox()
-        {
+            dt = new DataTable();
+            dt.Columns.Add("SaleID", typeof(string));
+            dt.Columns.Add("ProductID", typeof(string));
+            dt.Columns.Add("Quantity", typeof(string));
+            dt.Columns.Add("Cost", typeof(string));
             string connstring = "Provider=Microsoft.ACE.OLEDB.12.0; data source = DB.accdb;";
-            OleDbConnection conn = new OleDbConnection(connstring);
-            DataSet ds = new DataSet();
+            conn = new OleDbConnection(connstring);
+            conn.Open();
+            filter();
+        }
+
+        void filter()
+        {
+            string keres = textBox1.Text;
+            string command = " Select * FROM Products Where ProductName LIKE '%" + keres + "%' ORDER BY ProductName ASC";
+            dataadapter = new OleDbDataAdapter(command, conn);
+            ds = new DataSet();
+            dataadapter.Fill(ds, "Products");
+            dataGridView1.DataSource = ds;
+            dataGridView1.DataMember = "Products";
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            filter();
+        }
+
+        private void dataGridView1_DoubleClick(object sender, EventArgs e)
+        {
+            dt.Rows.Add(selected, selected_name, selected_quantity, selected_cost);
+            label2.Text = dt.Rows.Count.ToString();
+        }
+
+        private void dataGridView1_SelectionChanged(object sender, EventArgs e)
+        {
             try
             {
-                conn.Open();
-                OleDbCommand cmd = new OleDbCommand("select ID,CostumerName from Customers group by ID, CostumerName", conn);
-                OleDbDataAdapter da = new OleDbDataAdapter();
-                da.SelectCommand = cmd;
-                da.Fill(ds);
-                comboBox1.DisplayMember = "CostumerName";
-                comboBox1.ValueMember = "ID";
-                comboBox1.DataSource = ds.Tables[0];
+                selected = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+                selected_name = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+                selected_quantity = "1";
+                selected_cost = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             }
-            catch (Exception ex)
-            {
-                //Exception Message
-            }
-            finally
-            {
-                conn.Close();
-                conn.Dispose();
-            }
+            catch { }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            dt.Rows.Add(selected, selected_name, selected_quantity, selected_cost);
+            label2.Text = dt.Rows.Count.ToString();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Sales sl = new Sales(dt);
+            sl.Show();
         }
     }
 }
